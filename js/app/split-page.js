@@ -1,13 +1,14 @@
 define(['jquery'],function($) {
 
     /*
+
       分页插件
       {obj} options [分页属性]
       options参数详情：
       prePageNum:每页的数据量，选填，默认10
       totleNum:总的数据量，必填
       showPage:显示的页数，选填，默认7 ...
-
+      
     */
 
     return function(options) {
@@ -31,7 +32,7 @@ define(['jquery'],function($) {
         var lists = $('<ul></ul>');
         lists.attr('data-sp','split-page');
         for(var i = 1; i <= opt.showPage; i++){
-            lists.append('<li class="page-number"><a href="#"></a>' + i + '</li>')
+            lists.append('<li class="page-number"><a href="#"></a>' + i + '</li>');
         }
         lists.append('<li class="thpoint">...</li>');
 
