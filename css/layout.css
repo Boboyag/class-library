@@ -1,0 +1,841 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+form,
+button,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+img,
+input,
+label,
+select {
+    vertical-align: middle;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*#wrapper{
+    width: 100%;
+    height: 100%;
+}
+#pager{
+    width: 100%;
+    height: auto;
+}*/
+
+.arrow-icon {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+}
+
+#header img,
+#header ul,
+#header nav,
+#header div,
+#header span,
+#header a,
+#header i,
+#header h3 {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+}
+
+#header {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+}
+
+#header .w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+#header .logo {
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+}
+
+#header .logo img {
+    float: left;
+    width: 109px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#header nav {
+    height: 60px;
+    display: inline-block;
+    float: left;
+}
+
+#header nav a {
+    color: #333;
+}
+
+#header nav a:hover {
+    color: #35b558;
+}
+
+#header nav li {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+
+#header nav li i.arrow-icon {
+    margin-bottom: 2px;
+}
+
+#header nav li:hover {
+    color: #35b558;
+    cursor: pointer;
+}
+
+#header nav li:hover i.arrow-icon {
+    margin-bottom: -2px;
+    border-top: 1px solid #35b558;
+    border-left: 1px solid #35b558;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    animation: rotate 1s ease normal;
+    -webkit-animation: rotate 1s ease normal;
+    -moz-animation: rotate 1s ease normal;
+}
+
+@keyframes rotate {
+    0% {
+        margin-bottom: 2px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+    }
+    10% {
+        margin-bottom: -2px;
+    }
+    100% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+    }
+}
+
+#header nav li:hover .submenu {
+    display: block;
+    opacity: 1;
+    animation: myfirst 0.8s ease normal;
+    -moz-animation: myfirst 0.8s ease normal;
+    -webkit-animation: myfirst 0.8s ease normal;
+}
+
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header nav li:last-child {
+    margin-right: 0;
+}
+
+#header nav .submenu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+}
+
+#header nav .submenu h3 {
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300px;
+}
+
+#header nav .submenu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+#header nav .vip-lesson {
+    padding: 10px 0;
+}
+
+#header nav .vip-lesson a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+#header nav .vip-lesson a:hover {
+    color: #35b558;
+    background: #fafafa;
+}
+
+#header nav .vip-lesson a span {
+    color: #bbb;
+    float: right;
+}
+
+#header .icon-box {
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+
+#header .relative {
+    position: relative;
+}
+
+#header .icon-box span {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    background: url(../images/search-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0;
+}
+
+#header .search-icon:hover {
+    background: url(../images/search-icon2.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0;
+}
+
+#header .icon-box .app-icon {
+    background: url(../images/app-icon.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+#header .icon-box .app-icon:hover {
+    background: url(../images/app-icon2.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+#header .icon-box .app-icon .submenu {
+    padding: 0;
+    right: -50px;
+}
+
+#header .icon-box .app-icon .submenu img {
+    width: 100%;
+}
+
+#header .icon-box .app-icon .submenu .top-icon {
+    right: 50px;
+}
+
+#header .icon-box .login-icon {
+    background: url(../images/login-icon.png) 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+
+.loginlist .submenu {
+    display: none;
+    opacity: 0;
+    padding: 10px 0;
+    background: #fff;
+    position: absolute;
+    width: 120px;
+    z-index: 1200;
+    top: 58px;
+    right: -10px;
+}
+
+.loginlist .submenu .top-icon {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.loginlist .submenu dd {
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.loginlist .submenu dd a {
+    color: #666;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+
+.loginlist .submenu dd:hover {
+    background: #f5f5f5;
+}
+
+.loginlist .submenu dd a:hover {
+    background: #f5f5f5;
+    color: #35b558;
+}
+
+.loginlist .submenu dd a.reg-btn,
+.loginlist .submenu dd a.login-btn {
+    width: 45%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.loginlist:hover .submenu {
+    display: block;
+    opacity: 1;
+    animation: listshow 0.8s ease normal;
+    -moz-animation: listshow 0.8s ease normal;
+    -webkit-animation: listshow 0.8s ease normal;
+}
+
+@keyframes listshow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*图标部分*/
+
+#header nav li i {
+    margin-left: 5px;
+}
+
+.vip-lesson i,
+.school-list i {
+    background: url(../images/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+
+.school-list .web-icon {
+    background-position: -15px -27px;
+}
+
+.school-list i.python-icon,
+.school-list i.go-icon,
+.school-list i.php-icon,
+.school-list i.java-icon,
+.school-list i.ios-icon,
+.school-list i.android-icon {
+    background: url(../images/allicon4.png) 0 0 no-repeat;
+    background-size: 16px 148px;
+}
+
+.school-list i.android-icon {
+    background-position: -2px -60px;
+}
+
+.school-list i.python-icon {
+    background-position: -2px -2px;
+}
+
+.school-list i.go-icon {
+    background-position: -2px -38px;
+}
+
+.school-list i.ios-icon {
+    background-position: -2px -82px;
+}
+
+.vip-lesson .kck-icon {
+    background-position: 0 -13px;
+}
+
+.vip-lesson .zyljt-icon {
+    background-position: -45px 0;
+}
+
+.vip-lesson .zstxt-icon {
+    background-position: -30px -13px;
+}
+
+.vip-lesson .xlkc-icon {
+    background: url(../images/xlkc2.png) 0 0 no-repeat;
+    background-size: 12px 12px;
+}
+
+.vip-lesson .kcbq-icon {
+    background-position: -15px -13px;
+}
+
+.vip-lesson .vip-icon {
+    background-position: -16px 0;
+}
+
+.vip-lesson .jswd-icon {
+    background-position: 0 -27px;
+}
+
+.vip-lesson .wiki-icon {
+    background-position: -29px -27px;
+}
+
+.vip-lesson .sq-icon {
+    background-position: 0 2px;
+}
+
+.vip-lesson .zyxz-icon {
+    background-position: -30px 0;
+}
+
+#header .loginlist dd i {
+    background: url(../images/allicon2.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#header .loginlist .xxzx-icon {
+    background-position: -16px -15px;
+}
+
+#header .loginlist .grzy-icon {
+    background-position: -45px -1px;
+}
+
+#header .loginlist .xxtz-icon {
+    background-position: -16px -30px;
+}
+
+#header .loginlist .zhsz-icon {
+    background-position: -30px -1px;
+}
+
+/*搜索样式*/
+#header .searchbox{
+    display: none;
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: searchbox .7s ease forwards; 
+}
+@keyframes searchbox{
+    0%{
+        right: -425px;
+        opacity: 0;
+        transform: scale(0.1,1);
+    }
+    100%{
+        right: 0;
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+#header .searchbox .close-icon{
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url(../images/close-icon.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+}
+#header .searchbox .search-icon{
+    background: url(../images/search-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+}
+#header .searchbox .search-icon:hover{
+    background: url(../images/search-icon2.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+}
+#header .searchbox input{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+#header .searchbox .tagbox{
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    position: relative;
+    left: 180px;
+}
+#header .searchbox .tagbox a{
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+/*头部样式*/
+
+
+
+/*身体部分样式*/
+
+
+
+/*尾部样式*/
+#footer {
+    min-width: 1000px;
+    border-top: 1px solid #e4e4e4;
+    background: #fff;
+    margin-top: 50px !important;
+}
+
+#footer .jkinfor-block {
+    background: #fff;
+}
+
+#footer .jkinfor-block .jkinfor {
+    position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo img {
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+
+#footer .jkinfor-block .jkinfor .jk-logo p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+#footer .jkinfor dl {
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+
+#footer .jkinfor dl dt {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#footer .jkinfor dl dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#footer .jkinfor dl dd a {
+    color: #999;
+}
+#footer .jkinfor dl dd a:hover {
+    color: #36b559;
+}
+#footer .jk-down {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+}
+
+#footer .jk-down .hot-tel {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#footer .jk-down .down-con {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+#footer .jk-down .down-con img {
+    display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+
+#footer .jk-down .down-ios {
+    background: url(../images/icon-down-ios.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+#footer .jk-down .down-and {
+    background: url(../images/icon-down-and.png) no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+#footer .jk-down .down-con:hover img {
+    display: block;
+}
+
+#footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#footer .copyright a {
+    color: #999;
+}
+
+#footer .copyright a.down-wechat {
+    float: right;
+    height: 15px;
+    width: 20px;
+    background: url(../images/icon-down-wechat.png) no-repeat 0 0;
+    background-size: 18px 15px;
+}
+
+#footer .copyright a.down-sina {
+    float: right;
+    height: 15px;
+    width: 20px;
+    margin-right: 10px;
+    background: url(../images/icon-down-sina.png) no-repeat 0 0;
+    background-size: 20px 15px;
+}
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+}
+
+.gotop span.top {
+    display: block;
+    background: #fff url(../images/gotop.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.gotop span.top:hover {
+    background: #fff url(../images/gotop2.jpg) 0 0 no-repeat;
+    background-size: 34px 103px;
+}
+
+.gotop span.jk-app {
+    position: relative;
+    display: block;
+    background: #f7f7f7 url(../images/phone-1.png) center center no-repeat;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.appewm {
+    background: url(../images/appewm.png) center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+
+.gotop span.jk-app:hover {
+    background: url(../images/phone-2.png) center center no-repeat;
+    background-size: 12px 24px;
+}
+
+.gotop span.jk-app:hover .appewm {
+    display: block;
+}
